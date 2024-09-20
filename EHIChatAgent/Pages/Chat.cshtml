@@ -1,0 +1,19 @@
+﻿@page
+@model EHIChatAgent.Pages.ChatModel
+@{
+    ViewData["Title"] = "Chat";
+}
+<h2>Healthcare NL to SQL Agent</h2>
+
+<div id="chatWindow" style="border:1px solid #ccc; padding:10px; width: 1200px; height: 600px; overflow-y: auto;">
+    @foreach (var message in ChatModel.ChatMessages)
+    {
+        <p><strong>@message.Sender:</strong> @Html.Raw(message.Content)</p>
+    }
+</div>
+
+<form method="post" style="margin-top: 10px;">
+    <label for="message">Enter Message:</label><br />
+    <input type="text" id="message" name="Message" style="width: 1200px;" /><br />
+    <input type="submit" value="Send" />
+</form>
