@@ -18,8 +18,8 @@ namespace EHIChatAgent
         private readonly string searchEndpoint = "https://ehisearchindex.search.windows.net";
         private readonly string searchIndex = "customschemaindex";
         private readonly string semanticConfiguration = "customschemasemantic";
-        string openAiApiKey = "0ba307120c32453893d22d6debcd69cc";
-        private string searchResourceKey = "Wgjv9vnyidWEiVlaErdxzDttCKHLFvWBPTRLyEks39AzSeA9K5y1";
+        string openAiApiKey = "set your Azure OpenAI key here";
+        private string searchResourceKey = "set your Azure Search API Key here";
 
         public async Task<ChatResponse> OpenAIRequestAsync(string question)
         {

@@ -10,7 +10,7 @@ namespace EHIChatAgent
 {
     public class OpenAIRequest
     {
-        private const string API_KEY = "0ba307120c32453893d22d6debcd69cc"; // Set your key here
+        private const string API_KEY = "Set your key here";
 
         private const string ENDPOINT = "https://hdi-openai-resource.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview";
         public static async Task<string> OpenAIRequestAsync(string question)
