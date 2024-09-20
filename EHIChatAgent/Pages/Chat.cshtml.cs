@@ -64,6 +64,7 @@ namespace EHIChatAgent.Pages
                 {
                     ChatMessages.Add(new ChatMessage
                     {
+                        Sender = "Intent",
                         Content = Markdig.Markdown.ToHtml(openAIResponseIntent, pipeline)
                     });
                 }
@@ -74,6 +75,7 @@ namespace EHIChatAgent.Pages
                     {
                         ChatMessages.Add(new ChatMessage
                         {
+                            Sender = "Citation",
                             Content = Markdig.Markdown.ToHtml(citation, pipeline)
                         });
                     });
